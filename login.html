@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Faculty Dashboard</title>
+  <link rel="stylesheet" href="login_styles.css" />
+  <script type="module" src="login.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Faculty Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <div class="card">
+        <h2>🔑 Admin Login</h2>
+        <form id="login-form">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+
+          <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Faculty Dashboard</p>
+  </footer>
+</body>
+</html>
