@@ -12,21 +12,29 @@
 </head>
 <body>
   <header>
-    <h1>Faculty Class Dashboard</h1>
+    <h1>📚 Faculty Class Dashboard</h1>
     <p id="current-date"></p>
   </header>
 
   <main>
     <!-- 📌 Live Dashboard -->
-    <section id="dashboard">
-      <p class="loading">Loading timetable...</p>
+    <section id="dashboard-section">
+      <h2>Ongoing Classes</h2>
+      <div id="dashboard" class="table-container">
+        <p class="loading">Loading timetable...</p>
+      </div>
+
+      <h2>Free / Leisure Faculty</h2>
+      <div id="leisure-dashboard" class="table-container">
+        <p class="loading">Loading leisure data...</p>
+      </div>
     </section>
 
     <!-- 📌 Leisure Finder -->
     <section id="filter-section">
-      <button id="toggle-filter" type="button">Show Leisure Finder</button>
+      <button id="toggle-filter" type="button" class="btn">Show Leisure Finder</button>
 
-      <form id="leisure-form" style="display:none; margin-top:1rem;">
+      <form id="leisure-form" style="display:none; margin-top:1rem;" class="card">
         <label for="day">Day:</label>
         <select id="day" name="day" required>
           <option value="">--Select Day--</option>
@@ -49,10 +57,10 @@
           <option value="Period 6">Period 6</option>
         </select>
 
-        <button type="submit">Find Leisure Faculty</button>
+        <button type="submit" class="btn">Find Leisure Faculty</button>
       </form>
 
-      <div id="leisure-results" style="margin-top:1rem;"></div>
+      <div id="leisure-results" class="table-container" style="margin-top:1rem;"></div>
     </section>
   </main>
 
